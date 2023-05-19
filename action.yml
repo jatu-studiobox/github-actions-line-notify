@@ -1,0 +1,24 @@
+name: Github to LINE Notify
+description: LINE Notify for GitHub Actions
+inputs:
+  access_token:
+    description: LINE Access Token
+    required: true
+  repository_name:
+    description: Repository name
+    required: true
+  issue_number:
+    description: Issue No.
+    required: true
+  issue_title:
+    description: Issue Title
+    required: true
+  issue_html_url:
+    description: Issue Title
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: message-circle
+  color: purple

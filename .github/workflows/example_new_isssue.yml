@@ -6,7 +6,7 @@ jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - uses: jatu-studiobox/github-actions-line-notify@v1.2.0
+      - uses: jatu-studiobox/github-actions-line-notify@v1.0
         with:
           access_token: ${{ secrets.LINE_NOTIFY_ACCESS_TOKEN }}
           repository_name: ${{ github.event.repository.name }}
